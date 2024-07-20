@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,#3ed8ff,#a8f5ff);/* linear-gradient ka use karke 3 chiz pass kar sakte hai*/
+}
+.inner-box{
+    width: 400px;
+    margin: 0 auto; /*center mein lane ke liye */
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    box-shadow: 2px 2px 5px #2773a5;
+    z-index: 2;
+}
+.signup-header h1{
+    font-size: 2.5rem;
+    color: #212121;
+}
+.signup-header p{
+    font-size: 0.9rem;
+    color: #555;
+}
+.signup-body{
+    margin: 20px 0px;
+}
+.signup-body p{
+    margin: 10px 0px;
+}
+.signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px ;
+}
+.signup-body p input[type="submit"]{
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.signup-body p input[type="submit"]:hover{
+    background-color: #2773a5;
+}
+.signup-footer p{
+    color: #555;
+    text-align: center;
+}
+.signup-footer p a{
+    color: #2773a5;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+}
+
+/* linear-gradient(to right) - left to right
+linear-gradient(to left) - right to left
+linear-gradient(to top right) - start from bottom left to right */
